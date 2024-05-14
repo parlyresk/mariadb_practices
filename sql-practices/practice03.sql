@@ -3,6 +3,7 @@
 select e.emp_no,e.first_name,s.salary
 from salaries s
 join employees e on s.emp_no=e.emp_no
+where s.to_date='9999-01-01'
 order by s.salary desc;
 
 -- 문제2.
@@ -10,7 +11,8 @@ order by s.salary desc;
 select e.emp_no,e.first_name,t.title
 from employees e
 join titles t on e.emp_no=t.emp_no
-where t.to_date='9999-01-01';
+where t.to_date='9999-01-01'
+order by e.first_name;
 
 -- 문제3.
 -- 전체 사원의 사번, 이름, 현재 부서를 이름 순서로 출력하세요..

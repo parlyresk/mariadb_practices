@@ -83,6 +83,8 @@ where title='Engineer' and to_date='9999-01-01';
 
 -- 사번이 13250(Zeydy)인 지원이 직책 변경 상황을 시간순으로 출력해보세요.
 
+
+
 select *
 from titles
 where emp_no='13250'

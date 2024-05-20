@@ -6,7 +6,7 @@ import java.util.Scanner;
 import emaillist.dao.EmaillistDao;
 import emaillist.vo.EmaillistVo;
 
-public class EmailListApp {
+public class EmaillistApp {
 	private static Scanner scanner = new Scanner(System.in);
 	private static EmaillistDao emaillistDao = new EmaillistDao();
 	

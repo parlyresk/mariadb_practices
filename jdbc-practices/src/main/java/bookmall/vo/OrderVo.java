@@ -6,7 +6,7 @@ public class OrderVo {
 	private int payment;
 	private String shipping;
 	private String status;
-	private Long user_no;
+	private Long userNo;
 	public Long getNo() {
 		return no;
 	}
@@ -38,21 +38,14 @@ public class OrderVo {
 	public void setStatus(String status) {
 		this.status = status;
 	}
-	public Long getUser_no() {
-		return user_no;
+	public Long getUserNo() {
+		return userNo;
 	}
-	public void setUser_no(Long user_no) {
-		this.user_no = user_no;
+	public void setUserNo(Long userNo) {
+		this.userNo = userNo;
 	}
 	
-	@Override
-	public String toString() {
-		return "OrderVo [no=" + no + ", number=" + number + ", payment=" + payment + ", shipping=" + shipping
-				+ ", status=" + status + ", user_no=" + user_no + "]";
-	}
-	public void setUserNo(Long user_no) {
-		setUser_no(user_no);
-		
-	}
+	
+	
 
 }

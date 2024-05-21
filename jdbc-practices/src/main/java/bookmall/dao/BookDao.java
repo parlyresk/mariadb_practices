@@ -31,7 +31,7 @@ public class BookDao {
 			) {
 				pstmt1.setString(1, vo.getTitle());
 				pstmt1.setInt(2, vo.getPrice());
-				pstmt1.setLong(3, vo.getCategory_no());
+				pstmt1.setLong(3, vo.getCategoryNo());
 				
 				pstmt1.executeUpdate();
 				

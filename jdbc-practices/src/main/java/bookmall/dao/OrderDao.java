@@ -37,7 +37,7 @@ public class OrderDao {
 				pstmt1.setInt(2, vo.getPayment());
 				pstmt1.setString(3, vo.getShipping());
 				pstmt1.setString(4, vo.getStatus());
-				pstmt1.setLong(5, vo.getUser_no());
+				pstmt1.setLong(5, vo.getUserNo());
 				
 				pstmt1.executeUpdate();
 				
@@ -58,8 +58,8 @@ public class OrderDao {
 			) {
 				pstmt1.setInt(1, vo.getPrice());
 				pstmt1.setInt(2, vo.getQuantity());
-				pstmt1.setLong(3, vo.getOrders_no());
-				pstmt1.setLong(4, vo.getBook_no());
+				pstmt1.setLong(3, vo.getOrderNo());
+				pstmt1.setLong(4, vo.getBookNo());
 				
 				pstmt1.executeUpdate();
 				
@@ -98,7 +98,7 @@ public class OrderDao {
 				vo.setPayment(payment);
 				vo.setShipping(shipping);
 				vo.setStatus(status);
-				vo.setUser_no(user_no1);
+				vo.setUserNo(user_no1);
 			}
 		} catch (SQLException e) {
 			System.out.println("error:" + e);
@@ -127,10 +127,10 @@ public class OrderDao {
 				String title=rs.getString(5);
 				
 				OrderBookVo vo=new OrderBookVo();
-				vo.setOrders_no(orders_no);
+				vo.setOrderNo(orders_no);
 				vo.setQuantity(quantity);
 				vo.setPrice(price);
-				vo.setBook_no(book_no);
+				vo.setBookNo(book_no);
 				vo.setBookTitle(title);
 				
 				

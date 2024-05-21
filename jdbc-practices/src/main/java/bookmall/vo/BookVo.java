@@ -4,7 +4,7 @@ public class BookVo {
 	private Long no;
 	private String title;
 	private int price;
-	private Long category_no;
+	private Long categoryNo;
 
 	
 
@@ -32,13 +32,7 @@ public class BookVo {
 		this.price = price;
 	}
 
-	public Long getCategory_no() {
-		return category_no;
-	}
-
-	public void setCategory_no(Long category_no) {
-		this.category_no = category_no;
-	}
+	
 
 	public BookVo(String title, int price) {
 		this.title=title;
@@ -46,14 +40,15 @@ public class BookVo {
 		
 	}
 	
-	@Override
-	public String toString() {
-		return "BookVo [no=" + no + ", title=" + title + ", price=" + price + ", category_no=" + category_no + "]";
+	public Long getCategoryNo() {
+		return categoryNo;
 	}
 
-	public void setCategoryNo(Long category_no) {
-		setCategory_no(category_no);
-		
+	public void setCategoryNo(Long categoryNo) {
+		this.categoryNo = categoryNo;
 	}
+
+
+	
 
 }

@@ -33,8 +33,8 @@ public class CartDao {
 				
 			) {
 				pstmt1.setInt(1, vo.getQuantity());
-				pstmt1.setLong(2, vo.getBook_no());
-				pstmt1.setLong(3, vo.getUser_no());
+				pstmt1.setLong(2, vo.getBookNo());
+				pstmt1.setLong(3, vo.getUserNo());
 				
 				pstmt1.executeUpdate();
 				
@@ -67,7 +67,7 @@ public class CartDao {
 				CartVo vo = new CartVo();
 				vo.setQuantity(quantity);
 				vo.setBookNo(book_no);
-				vo.setUser_no(user_no1);
+				vo.setUserNo(user_no1);
 				vo.setBookTitle(title);
 				
 
